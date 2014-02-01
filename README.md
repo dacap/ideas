@@ -17,3 +17,9 @@ JavaScript no conoce nada sobre la web. Deberíamos crear un lenguaje de program
 ### Un no-lenguaje de programación (manipulación de árboles AST)
 
 (Continuar aquí.)
+
+## Sobre duplicación de código
+
+### Repositorio universal de librerías
+
+Hacer una organización en GitHub donde cada repositorio es una micro-librería para hacer una tarea particular. (Ejemplos: recorrer directorios, leer un archivo XML, el algoritmo *quicksort*, etc.) Existirían repositorios como `fs-source` que representarían la librería para manejar el *file system* en un pseudo lenguaje de programación (identificado como `source` aquí). Luego, se generarían repositorios como `fs-cpp`, `fs-java`, `fs-python`, etc. que serían versiones del código original convertidos automáticamente/periódicamente/por-comit desde `fs-source`.
