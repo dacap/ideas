@@ -26,6 +26,20 @@ escribir `"<b>" + texto + "</b>"` alguna vez.
 
 (Continuar aquí.)
 
+## Sobre UI/UX
+
+### Librería de layout
+
+Crear una librería genérica de layout en C++ --independiente de la
+plataforma-- que sirva para acomodar elementos gráficos en la pantalla
+según el tamaño de la ventana, algo así como *responsive design for
+desktop*.
+
+Luego podrían existir conectores entre la librería de layout genérico
+y un acomodador de ventanas/controles de: HWND crudos, controles Qt,
+wxWidgets, Gtk+, etc. Inclusive se podría usar como layout de
+elementos del DOM al compilar la librería con emscripten.
+
 ## Sobre duplicación de código
 
 ### Repositorio universal de librerías
