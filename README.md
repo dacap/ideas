@@ -24,7 +24,40 @@ escribir `"<b>" + texto + "</b>"` alguna vez.
 
 ### Un no-lenguaje de programación (manipulación de árboles AST)
 
-(Continuar aquí.)
+En
+[The Future of Programming](http://pchiusano.blogspot.co.nz/2011/12/future-of-programming.html)
+se habla sobre una organización del código en forma de bases de datos
+relacionales. En vez de editar texto, editaríamos esta base de datos
+--mediante alguna buena UI--. Así todo un nuevo conjunto de
+herramientas se hace posible, y lo que hoy nos parece complicado de
+implementar --por ejemplo un *refactor*-- se podría implementar como
+un `UPDATE` a un campo de una tabla. Un proyecto que apunta a esto
+es: [Lamdu](http://peaker.github.io/lamdu/).
+
+Existe todo un mundo detrás de la manipulación del texto en la
+programación. Somos artesanos del texto. Y con esto no me refiero a
+ser escritores. Sino que me refiero a la cantidad de tiempo invertido
+en cosas inútiles que no afectan al código. Ejemplos: espacios en
+blanco, tamaño de los tabs, cantidad de columnas en la pantalla,
+nuevas líneas y enters (CRLF vs CR vs LF), nivel de sangría, etc.  Y
+esto lo debemos acordar inclusive en equipos que muchas veces deben
+luchar con las preferencias personales de cada integrante.
+
+¿Por qué cuando programamos no nos podemos concentrar únicamente en la
+lógica del programa? ¿Por qué debemos lidear con todos estos problemas
+sobre caracteres que *no vemos*? Y el problema no es sólo en los
+editores de texto, se extiende a programas controladores de versiones
+(ej: git), páginas para revisar código --que deben mostrar estos
+caracteres--, herramientas para formatear el código, herramientas para
+buscar código (find/grep), etc.
+
+Por ahora veo lejos la posibilidad de reemplazar los editores de
+texto. Y a pesar de todos los problemas anteriores, la entrada y
+navegación de caracteres es más ágil que cualquier otra cosa.
+Igualmente así, la edición, navegación, presentación, comparación, y
+control de versiones de árboles AST abre todo un nuevo mundo de
+opciones que hoy en día se nos escapa por estar preocupados en si un
+tab debe tener un ancho de 4 u 8 espacios.
 
 ## Sobre UI/UX
 
