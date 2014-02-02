@@ -38,4 +38,5 @@ librería para manejar el *file system* en un pseudo lenguaje de
 programación (identificado como `source` aquí). Luego, se generarían
 repositorios como `fs-cpp`, `fs-java`, `fs-python`, etc. que serían
 versiones del código original convertidos
-automáticamente/periódicamente/por-comit desde `fs-source`.
+automáticamente/periódicamente/por-comit desde `fs-source` a C++,
+Java, Python, etc.
